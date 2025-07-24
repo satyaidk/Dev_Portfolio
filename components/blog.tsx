@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Calendar, ArrowRight, ExternalLink } from "lucide-react"
 import Image from "next/image"
-
+/*
 const blogPosts = [
-  /*{
+  {
     id: 1,
     title: "Building Scalable AI Systems with TensorFlow and Kubernetes",
     excerpt: "Learn how to deploy and scale AI models using TensorFlow and Kubernetes for production environments.",
@@ -35,8 +35,9 @@ const blogPosts = [
     date: "Jan 10, 2023",
     readTime: "7 min read",
     url: "#",
-  },*/
+  },
 ]
+*/
 
 export default function Blog() {
   return (
