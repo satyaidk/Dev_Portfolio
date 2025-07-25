@@ -55,7 +55,7 @@ const skillCategories = [
     name: "Web3",
     icon: <LayoutGrid className="h-6 w-6" />,
     skills: [
-      { name: "Ethereum", level: 85 },
+      { name: "Truffle", level: 66 },
       { name: "Solidity", level: 80 },
       { name: "Hardhat", level: 75 },
       { name: "IPFS", level: 70 },
