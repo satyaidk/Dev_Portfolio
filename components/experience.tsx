@@ -35,7 +35,6 @@ const experiences = [
       "As a Community Member at Hyderabad DAO, I collaborated with Web3 companies to organize events, connect enthusiasts and developers, and drive community growth in Hyderabad.",
   },
 ]
-/*
 const certifications = [
   {
     id: 1,
@@ -73,7 +72,6 @@ const certifications = [
     image: "/placeholder.svg?height=80&width=80",
   },
 ]
-*/
 
 export default function Experience() {
   return (

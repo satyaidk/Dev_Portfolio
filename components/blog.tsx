@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Calendar, ArrowRight, ExternalLink } from "lucide-react"
 import Image from "next/image"
-/*
 const blogPosts = [
   {
     id: 1,
@@ -37,7 +36,6 @@ const blogPosts = [
     url: "#",
   },
 ]
-*/
 
 export default function Blog() {
   return (

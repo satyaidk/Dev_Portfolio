@@ -10,7 +10,6 @@ import { ExternalLink, Github, Eye } from "lucide-react"
 import Image from "next/image"
 
 const categories = ["All", "AI/ML", "Web3", "Cloud", "DevOps"]
-/*
 const projects = [
   {
     id: 1,
@@ -80,7 +79,6 @@ const projects = [
     gradient: "from-amber-500 to-orange-600",
   },
 ]
-*/
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState("All")
