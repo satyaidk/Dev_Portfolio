@@ -41,14 +41,14 @@ const certifications = [
     name: "Introduction to Generative AI",
     issuer: "Google",
     date: "2024",
-    image: "/public/images/genai.jpg",
+    image: "/images/genai.jpg",
   },
   {
     id: 2,
     name: "Microsoft Certified: Azure AI Fundamentals",
     issuer: "Microsoft",
     date: "2024",
-    image: "/public/images/microsoftai.jpg",
+    image: "/images/microsoftai.jpg",
   },
 ]
 
