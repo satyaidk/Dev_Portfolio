@@ -12,28 +12,9 @@ const blogPosts = [
     title: "Building Scalable AI Systems with TensorFlow and Kubernetes",
     excerpt: "Learn how to deploy and scale AI models using TensorFlow and Kubernetes for production environments.",
     image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2940&auto=format&fit=crop",
-    date: "Mar 15, 2023",
+    date: "July 26, 2025",
     readTime: "8 min read",
-    url: "#",
-  },
-  {
-    id: 2,
-    title: "Smart Contract Security: Best Practices for Web3 Developers",
-    excerpt:
-      "Explore the essential security practices every blockchain developer should follow when writing smart contracts.",
-    image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=2832&auto=format&fit=crop",
-    date: "Feb 22, 2023",
-    readTime: "10 min read",
-    url: "#",
-  },
-  {
-    id: 3,
-    title: "Serverless Architecture: When and Why to Use It",
-    excerpt: "A comprehensive guide to serverless architecture, its benefits, limitations, and ideal use cases.",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2944&auto=format&fit=crop",
-    date: "Jan 10, 2023",
-    readTime: "7 min read",
-    url: "#",
+    url: "https://medium.com/@nikadisatyanarayana/building-scalable-ai-systems-for-beginners-815deaad8408",
   },
 ]
 
