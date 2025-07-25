@@ -38,38 +38,17 @@ const experiences = [
 const certifications = [
   {
     id: 1,
-    name: "AWS Certified Solutions Architect",
-    issuer: "Amazon Web Services",
-    date: "2023",
-    image: "/placeholder.svg?height=80&width=80",
+    name: "Introduction to Generative AI",
+    issuer: "Google",
+    date: "2024",
+    image: "/public/images/genai.jpg",
   },
   {
     id: 2,
-    name: "TensorFlow Developer Certificate",
-    issuer: "Google",
-    date: "2022",
-    image: "/placeholder.svg?height=80&width=80",
-  },
-  {
-    id: 3,
-    name: "Certified Blockchain Developer",
-    issuer: "Blockchain Council",
-    date: "2021",
-    image: "/placeholder.svg?height=80&width=80",
-  },
-  {
-    id: 4,
-    name: "Microsoft Azure AI Engineer",
+    name: "Microsoft Certified: Azure AI Fundamentals",
     issuer: "Microsoft",
-    date: "2021",
-    image: "/placeholder.svg?height=80&width=80",
-  },
-  {
-    id: 5,
-    name: "Kubernetes Administrator (CKA)",
-    issuer: "Cloud Native Computing Foundation",
-    date: "2020",
-    image: "/placeholder.svg?height=80&width=80",
+    date: "2024",
+    image: "/public/images/microsoftai.jpg",
   },
 ]
 
