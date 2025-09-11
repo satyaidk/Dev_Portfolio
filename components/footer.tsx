@@ -15,7 +15,7 @@ export default function Footer() {
             href="/"
             className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-500 mb-4 md:mb-0"
           >
-            SatyaNarayana Nikadi
+            SATYANARAYANA NIKADI
           </Link>
 
           <div className="flex items-center gap-4">
