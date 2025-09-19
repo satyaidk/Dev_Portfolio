@@ -6,7 +6,7 @@ import { FileText, Send, ArrowDown } from "lucide-react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 
-const skills = ["AI/ML Developer", "Web3 Engineer", "Cloud Architect", "DevOps Specialist", "Full-Stack Developer"]
+const skills = ["AI/ML Developer", "Web3 Engineer", "Frontend Developer"]
 
 export default function Hero() {
   const [currentSkill, setCurrentSkill] = useState(0)
@@ -47,7 +47,7 @@ export default function Hero() {
               </motion.p>
             </div>
             <p className="text-lg text-muted-foreground mb-8 max-w-lg">
-              Building innovative solutions at the intersection of AI, blockchain, and cloud computing.
+              Building innovative solutions at the intersection of AI, Blockchain, and Cloud computing.
             </p>
           </div>
 

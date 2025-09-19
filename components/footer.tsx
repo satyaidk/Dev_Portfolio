@@ -30,7 +30,7 @@ export default function Footer() {
               </a>
             </Button>
             <Button variant="ghost" size="icon" className="rounded-full" asChild>
-              <a href="https://www.x.com/in/satya_idk" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <a href="https://www.x.com/in/@satya_idk" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                 <Twitter size={20} />
               </a>
             </Button>
@@ -39,7 +39,7 @@ export default function Footer() {
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-            © {currentYear} SatyaNarayana Nikadi. All copy rights reserved.
+            ©{currentYear} SatyaNarayana Nikadi, All copy rights reserved.
           </p>
 
           <div className="flex items-center">
