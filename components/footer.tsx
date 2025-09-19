@@ -1,21 +1,37 @@
 "use client"
 
+import { useEffect, useRef } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Twitter, Youtube, Mail, ArrowUp } from "lucide-react"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+  const nameRef = useRef<HTMLSpanElement>(null)
+
+  useEffect(() => {
+    // Animation for the name
+    const interval = setInterval(() => {
+      if (nameRef.current) {
+        const colors = ["from-blue-500 to-purple-500", "from-purple-500 to-pink-500", "from-indigo-500 to-cyan-500"]
+        const randomColor = colors[Math.floor(Math.random() * colors.length)]
+        nameRef.current.className = `text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r ${randomColor} mb-4 md:mb-0 transition-colors duration-1000`
+      }
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <footer className="bg-muted/50 py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-          <Link
-            href="/"
-            className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-500 mb-4 md:mb-0"
-          >
-            SATYANARAYANA NIKADI
+          <Link href="/" className="mb-4 md:mb-0">
+            <span
+              ref={nameRef}
+              className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-red-600 transition-colors duration-1000"
+            >
+              SATYANARAYANA NIKADI
+            </span>
           </Link>
 
           <div className="flex items-center gap-4">
