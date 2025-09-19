@@ -1,19 +1,32 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { FileText, Send, ArrowDown } from "lucide-react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 
-const skills = ["AI/ML Developer", "Web3 Engineer", "Cloud Architect", "DevOps Specialist", "Full-Stack Developer"]
+const skills = ["AI/ML Developer", "Web3 Engineer", "Frontend Developer"]
 
 export default function Hero() {
   const [currentSkill, setCurrentSkill] = useState(0)
+  const nameRef = useRef(null)
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSkill((prev) => (prev + 1) % skills.length)
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
+
+  useEffect(() => {
+    // Animation for the name
+    const interval = setInterval(() => {
+      if (nameRef.current) {
+        const colors = ["from-blue-500 to-purple-500", "from-purple-500 to-pink-500", "from-indigo-500 to-cyan-500"]
+        const randomColor = colors[Math.floor(Math.random() * colors.length)]
+        nameRef.current.className = `text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r ${randomColor} transition-colors duration-1000`
+      }
     }, 3000)
     return () => clearInterval(interval)
   }, [])
@@ -30,7 +43,10 @@ export default function Hero() {
           <div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
               Hi, I&apos;m{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-500">
+              <span 
+                ref={nameRef}
+                className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-pink-600 transition-colors duration-1000"
+              >
                 SATYANARAYANA NIKADI
               </span>
             </h1>
@@ -47,7 +63,7 @@ export default function Hero() {
               </motion.p>
             </div>
             <p className="text-lg text-muted-foreground mb-8 max-w-lg">
-              Building innovative solutions at the intersection of AI, blockchain, and cloud computing.
+              Building innovative solutions at the intersection of AI, Blockchain, and Cloud computing.
             </p>
           </div>
 
