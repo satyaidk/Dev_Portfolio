@@ -7,7 +7,7 @@ import Header from "@/components/header"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "SatyaNarayana - Software Engineer",
+  title: "Software Engineer",
   description: "AI/ML | Front-end Dev | Cloud Computing",
     generator: 'SatyaNarayana'
 }
